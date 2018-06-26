@@ -1,0 +1,85 @@
+// use /* */ to leave a blank line in the outputted file.
+
+@mixin propertyRuleFactory($index, $propList, $rule, $increment, $unit:px) {
+	@if $index != 0 { 
+		.#{$rule}-#{($increment * $index)} { 
+			@each $prop in $propList {
+				#{$prop}: #{($increment * $index)}#{$unit} !important; 
+			}
+		}
+	} @else if $index == 0 {
+		.no-#{$rule} { 
+			@each $prop in $propList {
+				#{$prop}: #{($increment * $index)}#{$unit} !important; 
+			}
+		}
+	}
+}
+
+/* */
+/* padding classes */
+//includes rule for all, top, right, bottom and left
+@for $i from 0 through $repeat {
+	/* padding #{($i * $paddingIncrement)} */
+	@include propertyRuleFactory($i, "padding", "pad", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-top", "pad-t", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-right", "pad-r", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-bottom", "pad-b", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-left", "pad-l", $paddingIncrement);
+	/* */
+}
+
+/* */
+/* margin classes */
+//includes rule for all, top, right, bottom and left
+@for $i from (-1 * $repeat) through $repeat {
+	/* margin #{($i * $marginIncrement)} */
+	@include propertyRuleFactory($i, "margin", "m", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-top", "m-t", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-right", "m-r", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-bottom", "m-b", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-left", "m-l", $marginIncrement);
+	/* */
+}
+
+/* */
+/* border classes */
+@for $i from 1 through $maxBorderWidth {
+	/* border-#{$i} */
+	.border-#{$i} { border:#{$i}px solid; }
+	.border-t-#{$i} { border-top:#{$i}px solid; }
+	.border-r-#{$i} { border-right:#{$i}px solid; }
+	.border-b-#{$i} { border-bottom:#{$i}px solid; }
+	.border-l-#{$i} { border-left:#{$i}px solid; }
+	/* */
+}
+
+/* */
+/* width classes */
+@for $i from 1 through 100 {
+	.w-#{$i} { width:#{$i + '%'} !important; }
+}
+/* fraction-like width classes */
+@for $i from 2 through 24 {
+	@for $x from 1 through ($i - 1) {
+		.w-#{$x}-#{$i} { width:#{100 * ($x/$i) - .01}% !important; }
+	}
+
+}
+
+/* */
+/* border radius classes */
+//includes rule for all, top, right, bottom and left
+@for $i from 0 through ($repeat/2) {
+	/* margin #{($i * $paddingIncrement)} */
+	@include propertyRuleFactory($i, "border-radius", "br", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-top-left-radius", "br-tl", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-top-right-radius", "br-tr", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-bottom-left-radius", "br-bl", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-bottom-right-radius", "br-br", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-bottom-left-radius"), "br-b", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-top-right-radius", "border-top-left-radius"), "br-t", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-top-right-radius"), "br-l", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-left-radius", "border-top-left-radius"), "br-r", $borderRadiusIncrement);
+	/* */
+}
