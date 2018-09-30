@@ -1,5 +1,6 @@
 @import "_customVariables";
 @import "custom";
+@import "./animate-sass/animate";
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -58,3 +59,4 @@ a img {
 .quote-text{   
     font-size: 19px;
 }
+
