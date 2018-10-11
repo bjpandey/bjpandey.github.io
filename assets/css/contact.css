@@ -1,0 +1,15 @@
+.contact-info li {
+				padding: 5px 0;
+			}
+
+			.contact-info li.phone a {
+				background-image: url('./assets/images/phone.png');
+			}
+
+			.contact-info li.email a {
+				background-image: url('./assets/images/mail.png');
+			}
+
+			.contact-info li.resume a {
+				background-image: url('./assets/images/resume.png');
+			}
