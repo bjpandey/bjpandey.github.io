@@ -1,19 +1,19 @@
 # Site settings
 title: Bijaya Pandey
-description: 'Believe Me ! I am Madhu Sudhan Subedi.'
-url: 'https://madhusudhansubedi.com.np'
+description: 'I love music and Technology.'
+url: 'https://bijayapandey.com.np'
 baseurl: ''
 google_analytics: 'UA-100719136-1'
-disqus_shortname: 'madhusudhansubedi'
+disqus_shortname: 'bijayapandey'
 future: true
 
 author:
-  name: 'Madhu Sudhan Subedi'
-  email: madhusudhansubedi4@gmail.com
-  twitter_username: sudhansubedi
-  facebook_username: sudhan.subedi.31
-  github_username:  madhusudhan1234
-  linkedin_username:  madhusudhan1994
+  name: 'Bijay Pandey'
+  email: creatorbzay1111@gmail.com
+  twitter_username: BijayaPandey11
+  facebook_username: BijayaPandey1111
+  github_username:  bjpandey
+  linkedin_username:  bijayapandey1111
 
 defaults:
   -
