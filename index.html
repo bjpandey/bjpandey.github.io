@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/tether.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/contact.css">
 	
@@ -28,7 +29,28 @@
   
   #success_message{ display: none;}
 </style>
-	
+
+<style>
+.element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #001F3F;
+  }
+  100% {
+    color: #FF4136;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+</style>	
 </head>
 <body data-spy="scroll" data-target=".navbar">
 
@@ -202,7 +224,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Contact Me Today!</legend>
+<legend class="element" style="font-weight: bold;">Contact Me Today!</legend>
 
 <!-- Text input-->
 
@@ -314,8 +336,6 @@
 		<div class="container">
 			<div class="row text-md-center">
 				
-					
-
 
                <a href="https://www.facebook.com/profile.php?id=100022831725987"><i class="fa fa-facebook-square fa-3x" style="padding: 10px"></i></a>
                <a href="https://twitter.com/BijayaPandey11"><i class="fa fa-twitter fa-3x" style="padding: 10px"></i></a>
@@ -422,17 +442,7 @@ $(document).ready(function() {
                     }
                 }
             },
-            zip: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your zip code'
-                    },
-                    zipCode: {
-                        country: 'US',
-                        message: 'Please supply a vaild zip code'
-                    }
-                }
-            },
+           
             comment: {
                 validators: {
                       stringLength: {
@@ -441,7 +451,7 @@ $(document).ready(function() {
                         message:'Please enter at least 10 characters and no more than 200'
                     },
                     notEmpty: {
-                        message: 'Please supply a description of your project'
+                        message: 'Please supply a message you want to send'
                     }
                     }
                 }
