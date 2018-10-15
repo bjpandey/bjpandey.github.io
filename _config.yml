@@ -1,0 +1,46 @@
+# Site settings
+title: Bijaya Pandey
+description: 'Believe Me ! I am Madhu Sudhan Subedi.'
+url: 'https://madhusudhansubedi.com.np'
+baseurl: ''
+google_analytics: 'UA-100719136-1'
+disqus_shortname: 'madhusudhansubedi'
+future: true
+
+author:
+  name: 'Madhu Sudhan Subedi'
+  email: madhusudhansubedi4@gmail.com
+  twitter_username: sudhansubedi
+  facebook_username: sudhan.subedi.31
+  github_username:  madhusudhan1234
+  linkedin_username:  madhusudhan1994
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
