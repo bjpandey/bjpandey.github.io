@@ -24,7 +24,8 @@
 	<script src="assets/js/jquery-scrolltofixed-min.js"></script>
 	<script src="assets/js/tether.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/bootstrapValidator.min.js"></script>
+	<script src="assets/js/bootstrapValidator.js"></script>
+
 	<style>
 
 		#success_message{ display: none;}
@@ -232,28 +233,14 @@
 									<!-- Text input-->
 
 									<div class="form-group">
-										<label class="col-md-4 control-label">First Name</label>
+										<label class="col-md-4 control-label">Full Name</label>
 										<div class="col-md-4 inputGroupContainer">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-												<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+												<input  name="full_name" placeholder="Full Name" class="form-control"  type="text">
 											</div>
 										</div>
 									</div>
-
-									<!-- Text input-->
-
-									<div class="form-group">
-										<label class="col-md-4 control-label" >Last Name</label>
-										<div class="col-md-4 inputGroupContainer">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-												<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-											</div>
-										</div>
-									</div>
-
-									<!-- Text input-->
 									<div class="form-group">
 										<label class="col-md-4 control-label">E-Mail</label>
 										<div class="col-md-4 inputGroupContainer">
@@ -265,46 +252,8 @@
 									</div>
 
 
-									<!-- Text input-->
-
 									<div class="form-group">
-										<label class="col-md-4 control-label">Phone #</label>
-										<div class="col-md-4 inputGroupContainer">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-												<input name="phone" placeholder="977" class="form-control" type="text">
-											</div>
-										</div>
-									</div>
-
-									<!-- Text input-->
-
-									<div class="form-group">
-										<label class="col-md-4 control-label">Address</label>
-										<div class="col-md-4 inputGroupContainer">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-												<input name="address" placeholder="Address" class="form-control" type="text">
-											</div>
-										</div>
-									</div>
-
-									<!-- Text input-->
-
-									<div class="form-group">
-										<label class="col-md-4 control-label">City</label>
-										<div class="col-md-4 inputGroupContainer">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-												<input name="city" placeholder="city" class="form-control"  type="text">
-											</div>
-										</div>
-									</div>
-
-									<!-- Text area -->
-
-									<div class="form-group">
-										<label class="col-md-4 control-label"> Discription</label>
+										<label class="col-md-4 control-label">Subject</label>
 										<div class="col-md-4 inputGroupContainer">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -377,26 +326,17 @@
         validating: 'glyphicon glyphicon-refresh'
       },
       fields: {
-        first_name: {
+        full_name: {
           validators: {
             stringLength: {
               min: 2,
             },
             notEmpty: {
-              message: 'Please supply your first name'
+              message: 'Please supply your full name'
             }
           }
         },
-        last_name: {
-          validators: {
-            stringLength: {
-              min: 2,
-            },
-            notEmpty: {
-              message: 'Please supply your last name'
-            }
-          }
-        },
+   
         email: {
           validators: {
             notEmpty: {
@@ -407,45 +347,7 @@
             }
           }
         },
-        phone: {
-          validators: {
-            notEmpty: {
-              message: 'Please supply your phone number'
-            },
-            phone: {
-              country: 'US',
-              message: 'Please supply a vaild phone number with area code'
-            }
-          }
-        },
-        address: {
-          validators: {
-            stringLength: {
-              min: 8,
-            },
-            notEmpty: {
-              message: 'Please supply your street address'
-            }
-          }
-        },
-        city: {
-          validators: {
-            stringLength: {
-              min: 4,
-            },
-            notEmpty: {
-              message: 'Please supply your city'
-            }
-          }
-        },
-        state: {
-          validators: {
-            notEmpty: {
-              message: 'Please select your state'
-            }
-          }
-        },
-
+       
         comment: {
           validators: {
             stringLength: {
