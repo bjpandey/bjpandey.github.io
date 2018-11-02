@@ -21,9 +21,11 @@ The slice( ) method copies a given part of an array and returns that copied part
 ### 2. Splice()
 The name of this function is very similar to slice( ). This naming similarity often confuses developers. The splice( ) method changes an array, by adding or removing elements from it. Let’s see how to add and remove elements with splice( ):
 
-###sss 3. Split()
-Slice( ) and splice( ) methods are for arrays. The split( ) method is used for strings. It divides a string into substrings and returns them as an array. It takes 2 parameters, and both are optional.Separator: Defines how to split a string… by a comma, character etc.
-Limit: Limits the number of splits with a given number
+### 3. Split()
+Slice( ) and splice( ) methods are for arrays. The split( ) method is used for strings. It divides a string into substrings and returns them as an array. It takes 2 parameters, and both are optional.
+
+Separator: Defines how to split a string… by a comma, character etc.
+Limit: Limits the number of splits with a given number.
 
 #### References
 * [Let’s clear up the confusion around the slice( ), splice( ), & split( ) methods in JavaScript](https://medium.freecodecamp.org/lets-clear-up-the-confusion-around-the-slice-splice-split-methods-in-javascript-8ba3266c29ae)
