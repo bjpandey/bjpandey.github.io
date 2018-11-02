@@ -1,5 +1,5 @@
 ---
-title: "Learn these 3 JS array methods to increse your competency"
+title: "Learn these 3 simple yet useful JS methods to increse your competency in client-side programming"
 date: 2018-11-2 4:12:00
 categories: [blog]
 tags: [blog]
