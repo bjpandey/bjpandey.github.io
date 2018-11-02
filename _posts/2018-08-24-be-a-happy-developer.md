@@ -1,5 +1,5 @@
 ---
-title: "Simple but Very useful JavaScript methods  or built-in functions "
+title: "Learn these 3 JS array methods to increse your competency"
 date: 2018-11-2 4:12:00
 categories: [blog]
 tags: [blog]
@@ -18,10 +18,10 @@ This usage is valid in JavaScript. An array with different data types: string, n
 ### 1. Slice()
 The slice( ) method copies a given part of an array and returns that copied part as a new array. It doesn’t change the original array.The slice( ) method doesn’t include the last given element.
 
-#### 2. Splice()
+### 2. Splice()
 The name of this function is very similar to slice( ). This naming similarity often confuses developers. The splice( ) method changes an array, by adding or removing elements from it. Let’s see how to add and remove elements with splice( ):
 
-#### 3. Split()
+###sss 3. Split()
 Slice( ) and splice( ) methods are for arrays. The split( ) method is used for strings. It divides a string into substrings and returns them as an array. It takes 2 parameters, and both are optional.Separator: Defines how to split a string… by a comma, character etc.
 Limit: Limits the number of splits with a given number
 
