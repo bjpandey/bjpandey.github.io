@@ -1,7 +1,7 @@
 ---
 layout: null
 sitemap:
-  exclude: 'yes'
+exclude: 'yes'
 ---
 
 $(document).ready(function () {
@@ -34,5 +34,14 @@ $(document).ready(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
-
 })
+
+const mainContent = document.querySelector('.main-content');
+const bodyContent = document.querySelector('body');
+
+mainContent.style.visibility = "hidden";
+bodyContent.classList.add('black-background');
+
+setTimeout(() => {
+  mainContent.style.visibility = "visible";
+}, 2000);
