@@ -12,7 +12,10 @@ Sometimes we need to do operations on those arrays. Then we use some JS methods 
 let arrayDefinition = [];   // Array declaration in JS
 Now let’s declare another array with different data types. I will use it below in examples:
 
+`
 let array = ["Madhu", 3, 4.44, true];
+`
+
 This usage is valid in JavaScript. An array with different data types: string, numbers, and a boolean.
 
 ### 1. Slice()
