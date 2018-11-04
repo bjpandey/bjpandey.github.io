@@ -5,7 +5,7 @@ categories: [blog]
 tags: [blog]
 ---
 
-### JavaScript Arrays HAHAHAHAHHAHA Hey Hai
+### JavaScript Arrays
 Firstly, you need to understand how JavaScript arrays work. Like in other programming languages, we use arrays to store multiple data in JS. But the difference is that JS arrays can contain different type of data at once.
 
 Sometimes we need to do operations on those arrays. Then we use some JS methods like slice () & splice (). You can see below how to declare an array in JavaScript:
