@@ -1,6 +1,6 @@
 # Site settings
 title: Bijaya Pandey
-description: 'Software Developer '
+description: 'Software Engineer'
 url: 'https://bijayapandey.com.np'
 baseurl: ''
 google_analytics: 'UA-128287983-1'
@@ -10,8 +10,8 @@ future: true
 author:
   name: 'Bijay Pandey'
   email: creatorbzay1111@gmail.com
-  twitter_username: BijayaPandey11
-  facebook_username: BijayaPandey1111
+  # twitter_username: BijayaPandey11
+  # facebook_username: BijayaPandey1111
   github_username:  bjpandey
   linkedin_username:  bijayapandey1111
   layout: default
