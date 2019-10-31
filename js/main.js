@@ -35,16 +35,3 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 })
-
-const mainContent = document.querySelector('.main-content');
-const carLoader = document.querySelector('.loading-window');
-const bodyContent = document.querySelector('body');
-
-mainContent.style.visibility = "hidden";
-bodyContent.classList.add('black-background');
-
-setTimeout(() => {
-  mainContent.style.visibility = "visible";
-  carLoader.style.visibility = "hidden";
-  bodyContent.classList.remove('black-background');
-}, 2000);
